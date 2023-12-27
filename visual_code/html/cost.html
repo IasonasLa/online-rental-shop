@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<style>
+        
+body
+{
+	font-family:Arial,Helvetica,sans-serif ;
+	background-color: #FFF8F0;
+	align-items: center;
+}
+h3{
+float: none;
+
+
+
+}
+.nav
+{
+	list-style: none;
+	margin:5px;
+	padding: 0px;
+	background: #2b6777;
+	border-radius: 05px;
+    overflow: auto;
+    width: 90%;
+		
+}
+
+.nav li
+{
+    float: left;
+    
+
+}
+
+.nav li a
+{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+
+
+}
+
+.nav li a:hover
+{
+	
+    background-color: #305e6b;
+    
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #305e6b;
+   overflow: hidden;
+   border-radius: 25px;
+
+
+}
+h1{
+    text-align: center;
+    color: #FFF8F0;
+-webkit-text-stroke: 0.05vw #305e6b ;
+}
+select{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance:none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: #305e6b;
+    background-image: none;
+    flex: 1;
+    padding: 0;
+    color: #FFF8F0;
+    cursor:pointer ;
+
+
+}
+select::-ms-expand{
+    display: none;
+}
+
+input[type="submit"]{
+border: 1px solid;
+height: 25px;
+background: #2b6777;
+border-radius: 25px;
+color: #FFF8F0;
+
+
+
+}
+
+
+
+
+
+</style>
+<script src="../js/cost.js" defer></script>
+</script>
+
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+        
+            <li><a href="main.html" >Αρχική σελίδα</a></li>
+            <li><a href="about_us.html" >Προφίλ Εταιρίας</a></li>
+            <li><a href="cars.html" >Στόλος</a></li>
+            <li><a href="cost.html" >Υπολογισμός Κόστους Ενοικίασης Αυτοκινήτου</a></li>
+            <li><a href="contact.html" >Επικοινωνία</a></li>
+            <li><a href="manage.html" >Σελίδα Διαχείρισης</a></li>
+    
+            
+            
+            
+        </ul>
+        </nav>
+
+        <h1> Υπολογισμός Κοστους Ενοικίασης Αυτοκινήτου</h1>
+            <form>
+            <div class="select">
+                <select name="car" id="car" >
+                    <option selected disabled>
+                        Επιλέξτε Το αμαξι τις αρεσκίας σας</option> 
+                    <option value="audiA4">Audi A4</option>
+                    <option value="AudiQ3"> Audi Q3 Sportsback</option>
+                    <option value="kodiaq"> Skoda Kodiaq</option>
+                    <option value="octavia">Skoda Octavia</option>
+                    <option value="aClass">Mercedes A class</option>
+                    <option value="gle">Mercedes Gle</option>
+                    <option value="bmw">BMW Series 4</option>
+                    <option value="mazda6">Mazda 6</option>
+                    <option value="ktmduke">KTM Duke</option>
+                    <option value="sym">Sym Scooter</option>
+                    <option value="honda">honda</option>
+                    <option value="hayabusa">Suzuki Hayabusa</option>
+                    <option value="metris">Mercedes Metris</option>
+                    <option value="fordTransit">Ford Transit</option>
+                    <option value="CrysterPacifika">Crysler Pacifica</option>
+                    <option value="sevrolet">Sevrolet G20 77΄</option>
+                </select>
+
+
+            </div>
+        
+
+            <br><br><label for="days">Εισάγεται Μέρες</label>
+            <input type="number" id="days" name="days" required><br><br>
+            <label for="age">Ηλικία Οδηγού</label>
+            <input type="number" id="age" name="age" required><br><br>
+            <input type="button" value="Υπολογισμος κόστους" name="calculate" id="calculate"></inpute>
+
+
+
+
+
+
+
+        </form>
+        <span id="price1"></span><br>
+        <span id="price2"></span><br>
+το κόστος ενοικίασης υπολογίζεται στα : <span id="price">...</span> ευρω
+
+
+</body>
+
+</html>

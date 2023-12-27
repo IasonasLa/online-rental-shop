@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+    <style>
+    body
+    {
+        font-family:Arial,Helvetica,sans-serif ;
+        background-color: #FFF8F0;
+        align-items: center;
+    }
+    h3{
+    float: none;
+    
+    
+    
+    }
+    .nav
+    {
+        list-style: none;
+        margin:5px;
+        padding: 0px;
+        background: #2b6777;
+        border-radius: 05px;
+        overflow: auto;
+        width: 90%;
+            
+    }
+    
+    .nav li
+    {
+        float: left;
+        
+    
+    }
+    
+    .nav li a
+    {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 15px 20px;
+    
+    
+    }
+    
+    .nav li a:hover
+    {
+        
+        background-color: #305e6b;
+        
+    }
+    h2{
+        text-align: center;
+
+
+    }
+    form{
+        align-content: center;
+    }
+    a{
+        text-align: center;
+    }
+    #iframe{
+        position: absolute;
+        bottom: 0;
+
+
+    }
+    .ff{
+       text-align: center;
+    }
+
+    .contactInfo{
+        text-align: center;
+
+    }
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+        
+            <li><a href="main.html" >Αρχική σελίδα</a></li>
+            <li><a href="about_us.html" >Προφίλ Εταιρίας</a></li>
+            <li><a href="cars.html" >Στόλος</a></li>
+            <li><a href="cost.html" >Υπολογισμός Κόστους Ενοικίασης Αυτοκινήτου</a></li>
+            <li><a href="contact.html" >Επικοινωνία</a></li>
+            <li><a href="manage.html" >Σελίδα Διαχείρισης</a></li>
+    
+            
+            
+            
+        </ul>
+        </nav>
+
+
+    
+        <h2>Φόρμα Επικοινωνία</h2>
+        <form class="ff" action="../php/contact.php" method="post">
+             <label for="fname">Ονομα:  </label>
+             <input type="text" id="fname" name="fname" placeholder="πχ Λαγκαδιανός Ιάσονας" required><br><br>
+             <label for="tel">Τηλέφωνο:</label>
+             <input type="text" id="tel" name="tel" placeholder="210000000" required><br><br>
+             <label for="sub">Θέμα:   </label>
+             <input type="text" id="sub" name="sub" placeholder="πχ.Ενοικίαση" required><br><br>
+             <label for="email">Email: </label>
+             <input type="text" id="email" name="email" placeholder="kostasmail12@gmail.com"><br><br> 
+             <label for="mess">Μήνημα</label><br>
+             <textarea id="mess" name="mess" rows="4" cols="50"></textarea><br>
+             <input type="submit" value="επικοινωνίστε"></inpute>
+        
+        </form>
+    
+    
+    
+     <div class="contactInfo">
+
+     <h2>Στοιχεία επικοινωνίας</h2>
+        <a href="https://www.google.com/maps/place/%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF+%CE%A0%CE%B5%CE%B9%CF%81%CE%B1%CE%B9%CF%8E%CF%82/@37.9415137,23.6528681,15z/data=!4m5!3m4!1s0x0:0x3e0dce8e58812705!8m2!3d37.9415137!4d23.6528681" target="_blank">Διεύθυνση</a><br><br>
+        <a href="tel:2104142000">Τηλέφωνο Επικοινωνία</a>
+
+
+    </div>
+
+
+    <footer>
+    <div id="iframe" style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=university%20of%20piraeus+(Our%20Store!)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/farm-gps/">farm gps</a></iframe></div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
